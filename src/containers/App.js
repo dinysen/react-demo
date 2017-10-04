@@ -13,11 +13,8 @@ class App extends React.Component{
     render(){
         return(
             <Router>
-                <div>
-                    <Route exact path="/" component={Navbar} >
-                        <Route path="/main" component={Main}/>
-                        <Route path="/right" component={UserInfo}/>
-                    </Route>
+                <div id="root">
+                    <Route path="/" component={Navbar} />
                 </div>
             </Router>
         )

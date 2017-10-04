@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import '../css/Navbar.css';
+import {BrowserRouter as Router,Route,Link,Redirect} from 'react-router-dom'//导入的方式跟之前有点变化
+
+import Main from "./Main"
 
 class Navbar extends Component {
 
@@ -39,16 +42,19 @@ class Navbar extends Component {
                 <ul className="navbar-container">
                     <li className="hover-item" style={{display : state.hoverVisible ? "block" : "none" ,width:state.hoverWidth,left:this.state.hoverLeft}} ></li>
                     <li onMouseOver={this._handleMouseOver} onMouseLeave={this._handleMouseOut} className="active" >
-                        <a href="javascript:void(0)">首页</a>
+                        <Link to="/main">首页</Link>
                     </li>
                     <li onMouseOver={this._handleMouseOver} onMouseLeave={this._handleMouseOut} >
-                        <a href="javascript:void(0)">时光轴</a>
+                        <Link to="/timeline">时光轴</Link>
                     </li>
                     <li onMouseOver={this._handleMouseOver} onMouseLeave={this._handleMouseOut} className="right-item" >
-                        <a href="javascript:void(0)">管理</a>
+                        <Link to="manage">管理</Link>
                     </li>
                 </ul>
-                {this.props.children}
+                <Route exact path="/" render={()=>{
+                    return <Redirect to="/main" />
+                }} />
+                <Route path="/main" component={Main} />
             </div>
         );
     }

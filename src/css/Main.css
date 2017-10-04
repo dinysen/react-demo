@@ -52,6 +52,18 @@
     animation-name : fadeInLeft;
 }
 
+.fadeInRight{
+    animation-duration : 1s;
+    animation-fill-mode: both;
+    animation-name : fadeInRight;
+}
+
+.fadeInBottom{
+    animation-duration : 1s;
+    animation-fill-mode: both;
+    animation-name : fadeInBottom;
+}
+
 .article-item:hover{
     border-left : 5px solid #009688;
     transition: all .3s linear;
@@ -192,6 +204,28 @@
 
 .link>ul>li>a:hover{
     color : #777;
+}
+
+@keyframes fadeInBottom {
+    0%{
+        opacity : 0;
+        transform : translate3d(0,100%,0);
+    }
+    100%{
+        opacity: 1;
+        transform : none;
+    }
+}
+
+@keyframes fadeInRight {
+    0%{
+        opacity : 0;
+        transform : translate3d(100%,0,0);
+    }
+    100%{
+        opacity: 1;
+        transform : none;
+    }
 }
 
 @keyframes fadeInLeft {

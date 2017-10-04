@@ -109,7 +109,7 @@ class Navbar extends Component {
                     }
                 </div>
                 <div className="right-container">
-                    <div className="userinfo block">
+                    <div className="userinfo block fadeInRight">
                         <div className="user-portrait-container">
                             <img src={require("../img/portrait.jpg")} />
                         </div>
@@ -118,7 +118,7 @@ class Navbar extends Component {
                         <p className="blog-location"><i className="iconfont icon-location"></i>魔都-上海</p>
                     </div>
 
-                    <div className="link block">
+                    <div className="link block fadeInBottom">
                         <div className="blog-module-title">快速导航</div>
                         <ul>
                             {
