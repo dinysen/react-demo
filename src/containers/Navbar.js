@@ -33,19 +33,23 @@ class Navbar extends Component {
 
     render() {
         const {state} = this;
+        console.log(this.props);
         return (
-            <ul className="navbar-container">
-                <li class="hover-item" style={{display : state.hoverVisible ? "block" : "none" ,width:state.hoverWidth,left:this.state.hoverLeft}} ></li>
-                <li onMouseOver={this._handleMouseOver} onMouseLeave={this._handleMouseOut} className="active" >
-                    <a href="javascript:void(0)">首页</a>
-                </li>
-                <li onMouseOver={this._handleMouseOver} onMouseLeave={this._handleMouseOut} >
-                    <a href="javascript:void(0)">时光轴</a>
-                </li>
-                <li onMouseOver={this._handleMouseOver} onMouseLeave={this._handleMouseOut} className="right-item" >
-                    <a href="javascript:void(0)">管理</a>
-                </li>
-            </ul>
+            <div>
+                <ul className="navbar-container">
+                    <li className="hover-item" style={{display : state.hoverVisible ? "block" : "none" ,width:state.hoverWidth,left:this.state.hoverLeft}} ></li>
+                    <li onMouseOver={this._handleMouseOver} onMouseLeave={this._handleMouseOut} className="active" >
+                        <a href="javascript:void(0)">首页</a>
+                    </li>
+                    <li onMouseOver={this._handleMouseOver} onMouseLeave={this._handleMouseOut} >
+                        <a href="javascript:void(0)">时光轴</a>
+                    </li>
+                    <li onMouseOver={this._handleMouseOver} onMouseLeave={this._handleMouseOut} className="right-item" >
+                        <a href="javascript:void(0)">管理</a>
+                    </li>
+                </ul>
+                {this.props.children}
+            </div>
         );
     }
 }
