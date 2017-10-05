@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../css/Main.css';
+import '../css/Animation.css'
 import '../fonts/iconfont.css'
 
 class Navbar extends Component {

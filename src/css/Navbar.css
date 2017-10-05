@@ -30,24 +30,32 @@
     transition: width .5s;
 }
 
-.navbar-container li.active:after{
+.navbar-container li>a{
+    position: relative;
+    display: inline-block;
+    width : 100%;
+    height : 100%;
+    line-height : 60px;
+    padding : 0 20px;
+    text-decoration: none;
+    color : #C1C6CD;
+    text-align: center;
+    box-sizing : border-box;
+}
+
+.navbar-container li>a.active:after{
     content : "";
     width : 100%;
     display: block;
     position: absolute;
     bottom : 0;
+    left : 0;
     height : 5px;
     background: #5FB878;
 }
 
 .navbar-container li.right-item{
     float : right;
-}
-
-.navbar-container li>a{
-    padding : 0 20px;
-    text-decoration: none;
-    color : #C1C6CD;
 }
 
 .navbar-container li>a:active{
@@ -57,4 +65,12 @@
 .navbar-container li>a:hover{
     color : white;
     transition: all .2s;
+}
+
+.main-content{
+    width : 100%;
+    position: absolute;
+    top : 60px;
+    bottom : 0;
+    overflow-y : auto;
 }
