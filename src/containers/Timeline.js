@@ -16,94 +16,72 @@ class Timeline extends Component {
     render() {
         const {state} = this;
         return (
-            <div className="timeline-root fadeInLeft">
+            <div className="timeline-root">
                 <div className="title-container">
                     <h3 className="title">不积跬步无以至千里</h3>
                 </div>
                 <ul className="timeline-container">
                     <li >
-                        <div className="timeline-date">2017-10-05</div>
+                        <div className="timeline-date fadeInLeft">2017-10-05</div>
                         <div className="timeline-hint">
                             <span></span>
                         </div>
-                        <div className="timeline-content">
+                        <div className="timeline-content fadeInRight">
                             <span>
                             显示一下可以写多少字显示一下可以写多少字显示一下可以写多少字显示一下可以写多少字显示一下可以写多少字显示一下可以写多少字显示一下可以写多少字显示一下可以写多少字显示一下可以写多少字显示一下可以写多少字显示一下可以写多少字显示一下可以写多少字显示一下可以写多少字显示一下可以写多少字
                             </span>
                         </div>
                     </li>
                     <li >
-                        <div className="timeline-date">2017-10-05</div>
+                        <div className="timeline-date fadeInLeft">2017-10-05</div>
                         <div className="timeline-hint">
                             <span></span>
                         </div>
-                        <div className="timeline-content">
+                        <div className="timeline-content fadeInRight">
                             <span>
                             显示一下可以写多少字显示一下可以写多少字显示一下可以写多少字显示一下可以写多少字显示一下可以写多少字显示一下可以写多少字显示一下可以写多少字显示一下可以写多少字显示一下可以写多少字显示一下可以写多少字显示一下可以写多少字显示一下可以写多少字显示一下可以写多少字显示一下可以写多少字
                             </span>
                         </div>
                     </li>
                     <li >
-                        <div className="timeline-date">2017-10-05</div>
+                        <div className="timeline-date fadeInLeft">2017-10-05</div>
                         <div className="timeline-hint">
                             <span></span>
                         </div>
-                        <div className="timeline-content">
+                        <div className="timeline-content fadeInRight">
                             <span>
                             显示一下可以写多少字显示一下可以写多少字显示一下可以写多少字显示一下可以写多少字显示一下可以写多少字显示一下可以写多少字显示一下可以写多少字显示一下可以写多少字显示一下可以写多少字显示一下可以写多少字显示一下可以写多少字显示一下可以写多少字显示一下可以写多少字显示一下可以写多少字
                             </span>
                         </div>
                     </li>
                     <li >
-                        <div className="timeline-date">2017-10-05</div>
+                        <div className="timeline-date fadeInLeft">2017-10-05</div>
                         <div className="timeline-hint">
                             <span></span>
                         </div>
-                        <div className="timeline-content">
+                        <div className="timeline-content fadeInRight">
                             <span>
                             显示一下可以写多少字显示一下可以写多少字显示一下可以写多少字显示一下可以写多少字显示一下可以写多少字显示一下可以写多少字显示一下可以写多少字显示一下可以写多少字显示一下可以写多少字显示一下可以写多少字显示一下可以写多少字显示一下可以写多少字显示一下可以写多少字显示一下可以写多少字
                             </span>
                         </div>
                     </li>
                     <li >
-                        <div className="timeline-date">2017-10-05</div>
+                        <div className="timeline-date fadeInLeft">2017-10-05</div>
                         <div className="timeline-hint">
                             <span></span>
                         </div>
-                        <div className="timeline-content">
+                        <div className="timeline-content fadeInRight">
                             <span>
                             显示一下可以写多少字显示一下可以写多少字显示一下可以写多少字显示一下可以写多少字显示一下可以写多少字显示一下可以写多少字显示一下可以写多少字显示一下可以写多少字显示一下可以写多少字显示一下可以写多少字显示一下可以写多少字显示一下可以写多少字显示一下可以写多少字显示一下可以写多少字
                             </span>
                         </div>
                     </li>
                     <li >
-                        <div className="timeline-date">2017-10-05</div>
+                        <div className="timeline-date fadeInLeft">2017-10-05</div>
                         <div className="timeline-hint">
                             <span></span>
                         </div>
-                        <div className="timeline-content">
-                            <span>
-                            显示一下可以写多少字显示一下可以写多少字显示一下可以写多少字显示一下可以写多少字显示一下可以写多少字显示一下可以写多少字显示一下可以写多少字显示一下可以写多少字显示一下可以写多少字显示一下可以写多少字显示一下可以写多少字显示一下可以写多少字显示一下可以写多少字显示一下可以写多少字
-                            </span>
-                        </div>
-                    </li>
-                    <li >
-                        <div className="timeline-date">2017-10-05</div>
-                        <div className="timeline-hint">
-                            <span></span>
-                        </div>
-                        <div className="timeline-content">
-                            <span>
-                            显示一下可以写多少字显示一下可以写多少字显示一下可以写多少字显示一下可以写多少字显示一下可以写多少字显示一下可以写多少字显示一下可以写多少字显示一下可以写多少字显示一下可以写多少字显示一下可以写多少字显示一下可以写多少字显示一下可以写多少字显示一下可以写多少字显示一下可以写多少字
-                            </span>
-                        </div>
-                    </li>
-                    <li >
-                        <div className="timeline-date">2017-10-05</div>
-                        <div className="timeline-hint">
-                            <span></span>
-                        </div>
-                        <div className="timeline-content">
+                        <div className="timeline-content fadeInRight">
                             <span>
                             显示一下可以写多少字显示一下可以写多少字显示一下可以写多少字显示一下可以写多少字显示一下可以写多少字显示一下可以写多少字显示一下可以写多少字显示一下可以写多少字显示一下可以写多少字显示一下可以写多少字显示一下可以写多少字显示一下可以写多少字显示一下可以写多少字显示一下可以写多少字
                             </span>

@@ -4,6 +4,7 @@ import {BrowserRouter as Router,Route,NavLink,Redirect} from 'react-router-dom'/
 
 import Main from "./Main"
 import Timeline from "./Timeline"
+import ManageIndex from "./ManageIndex"
 
 class Navbar extends Component {
 
@@ -58,7 +59,7 @@ class Navbar extends Component {
                     }} />
                     <Route path="/main" component={Main} />
                     <Route path="/timeline" component={Timeline} />
-                    <Route path="/manage" component={Timeline} />
+                    <Route path="/manage" component={ManageIndex} />
                 </div>
             </div>
         );

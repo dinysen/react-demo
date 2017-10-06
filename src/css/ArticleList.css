@@ -1,0 +1,94 @@
+.articlelist-container{
+  position: relative;
+  height : 100%;
+  width : 100%;
+  padding-left : 25%;
+  box-sizing : border-box;
+}
+
+.articlelist-container>.articlelist-side{
+  position : absolute;
+  top : 0;
+  height : 100%;
+  left : 0;
+  width : 25%;
+  border-right : 1px solid #e2e2e2;
+}
+
+.articlelist-container>.articlelist-side>.add{
+  height : 60px;
+  line-height : 60px;
+  border-bottom : 1px solid #e2e2e2;
+  cursor : pointer;
+  padding-left : 25px;
+  font-size : 15px;
+}
+
+.articlelist-container>.articlelist-side>.add>i{
+  font-size : 18px;
+  padding-right : 5px;
+  vertical-align: middle;
+  color : #333;
+}
+
+.articlelist-container>.articlelist-side>.add>span{
+  vertical-align: middle;
+}
+.articlelist-container>.articlelist-side>ul{
+  position: absolute;
+  top: 60px;
+  bottom: 0;
+  overflow-y: auto;
+  width: 100%;
+}
+
+.articlelist-container>.articlelist-side>ul>li{
+  position: relative;
+}
+
+.articlelist-container>.articlelist-side>ul>li>i{
+  position: absolute;
+  font-size: 30px;
+  color: #bebebe;
+  top: 30px;
+  left: 20px;
+  z-index: 999;
+}
+
+.articlelist-container>.articlelist-side>ul>li>a{
+  display: block;
+  position : relative;
+  height : 90px;
+  padding : 20px 15px 0 60px;
+  border-bottom : 1px solid #e2e2e2;
+  border-left : 5px solid transparent;
+  box-sizing : border-box;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color : #333;
+}
+
+.articlelist-container>.articlelist-side>ul>li>a>span{
+  position: absolute;
+  top: 40px;
+  left: 60px;
+  height: 30px;
+  display: block;
+  right: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.articlelist-container>.articlelist-side>ul>li>a:hover{
+  border-left : 5px solid #019688;
+  background: #eeeeee;
+}
+
+.articlelist-container>.articlelist-side>ul>li>a.active{
+  border-left : 5px solid #019688;
+  background: #eeeeee;
+}
