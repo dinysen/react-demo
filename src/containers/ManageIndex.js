@@ -30,7 +30,7 @@ class ManageIndex extends Component {
                 </div>
                 <div className="body">
                     <Route exact path="/manage" render={()=>{
-                            return <Redirect to="/manage/article" />
+                            return <Redirect to="/manage/articlelist" />
                         }}
                     />
                     <Route path="/manage/articlelist" component={ArticleList} />

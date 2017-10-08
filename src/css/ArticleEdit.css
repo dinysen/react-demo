@@ -1,0 +1,78 @@
+.articleedit-container{
+  position: relative;
+  border-left: 1px solid #e2e2e2;
+  height : 100%;
+  width : 100%;
+}
+
+.articleedit-container>input{
+  width: 100%;
+  padding: 20px 30px 10px 40px;
+  margin-bottom: 0;
+  border-bottom: 1px solid #d9d9d9;
+  font-size: 30px;
+  font-weight: normal;
+  line-height: 30px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  border-radius: 0;
+  box-shadow: none;
+  border : none;
+  appearance : none;
+  outline : 0;
+}
+
+.articleedit-container>.toolbar{
+  background-color: #dedede;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.articleedit-container>.toolbar:after{
+  content : "";
+  display : block;
+  width : 0;
+  clear : both;
+}
+
+.articleedit-container>.toolbar>li.left{
+  display : inline-block;
+  float : left;
+}
+
+.articleedit-container>.toolbar>li.right{
+  display : inline-block;
+  float : right;
+  margin-right : 13px;
+}
+
+.articleedit-container>.toolbar>li>a{
+  display : inline-block;
+  padding : 11px 14px;
+  line-height : 17px;
+  color : #555555;
+  font-size : 13px;
+}
+
+.articleedit-container>.toolbar>li a:hover{
+  background: #555555;
+  color : white;
+}
+
+.articleedit-container>.editor-container{
+  padding : 40px;
+  box-sizing : border-box;
+  overflow-y : auto;
+}
+
+.articleedit-container>.editor-container>div{
+  height : 100%;
+}
+
+.articleedit-container>.editor-container>div>div{
+  height : 100%;
+}
+
+.articleedit-container>.editor-container>div>div>div{
+  height : 100%;
+}

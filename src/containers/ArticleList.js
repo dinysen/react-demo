@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import '../css/ArticleList.css';
 import '../css/Animation.css'
 import '../fonts/iconfont.css'
+import {Route,NavLink} from "react-router-dom"
+import ArticleEdit from "./ArticleEdit"
 
 class ArticleList extends Component {
 
@@ -54,15 +56,18 @@ class ArticleList extends Component {
                                 return (
                                     <li>
                                         <i className="iconfont icon-wenjian" ></i>
-                                        <a className={index == 0 ? "active" : ""} href="javascript:void(0)" >
+                                        <NavLink to={`/manage/articlelist/articleedit/${index}`}  >
                                             {obj.title}
                                             <span>{obj.describe}</span>
-                                        </a>
+                                        </NavLink>
                                     </li>
                                 )
                             })
                         }
                     </ul>
+                </div>
+                <div className="article-content-container">
+                    <Route path="/manage/articlelist/articleedit/:id" component={ArticleEdit} />
                 </div>
             </div>
         );
